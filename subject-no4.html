@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150372745-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150372745-1');
+</script>
+<meta charset="UTF-8">
+<title>津波解析ハッカソン in 小豆島</title>
+<link rel="stylesheet" href="css/ress.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>津波解析ハッカソン in 小豆島</h1>
+  <h2>2020年9月1日〜3日</h2>
+</header>
+<nav>
+  <ul>
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="info.html">開催案内</a></li>
+    <li class="current"><a href="subject.html">課　題</a></li>
+    <li><a href="join.html">参加方法</a></li>
+    <li><a href="comp.html">計算環境</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+  </ul>
+</nav>
+<article>
+  <section>
+    <h2>課題４　陸上構造物へ作用する津波波圧</h2>
+    <h1>概要</h1>
+    <p>　有光ら(2012)による陸上構造物へ作用する津波波圧を対象とした水理模型実験の再現計算を行う．本課題では，貯水部のゲートを急開することにより発生させた段波状の津波を対象とし，段波が一様水深の海域部を伝播し，それに続く直立護岸を越流し，平坦な陸上部に設置された構造物に作用する際の，津波水位や構造物前面波圧の再現性を検証する．</p>
+    <h1>内容</h1>
+    <p>　陸上構造物に作用する津波流体力の評価は，重要な設計項目の一つである．有光ら(2012)は，構造物を考慮した平面2次元の津波遡上計算結果を活用して構造物に作用する波圧の評価方法を提案しており，その津波波圧評価手法の検証を目的として水理模型実験を行っている．水理模型実験では，ゲート急開により発生させた段波が一様水深の海域部を伝播し，それに続く直立護岸を越流し，平坦な陸上部に設置された構造物に作用する際の波圧が計測されており，本課題ではこの水理模型実験の再現計算を行う．</p>
+    <p>　実験方法および実験条件を以下に示す．まず実験装置を<a href="#fig1">図-1</a>に示す．実験には矩形水路（長さ18m×幅0.5m×高さ0.5m）を用い，長さ8mの貯水部のゲートを急開することにより段波状の津波を発生させている．津波は，長さ3.2mの一様水深部（海域）を伝播し，直立護岸を越流して平坦な陸上部を遡上する．</p>
+    <p>　実験では<a href="#table1">表-1</a>に示すように，構造物の形状（<a href="#fig2">図-2</a>参照），構造物の位置（護岸からの距離<i>D</i>），防潮壁高さ<i>H</i><sub>w</sub>，貯水位<i>&Delta;h</i>を変化させて行っている．</p>
+    <p>　<a href="#fig3">図-3</a>に示す5箇所の水位および構造物前面の圧力を計測した．圧力は，底面からの高さ0.01m~0.23mの範囲を0.02m間隔で計測した．実験データのサンプリング周波数は500Hzで計測時間は40秒である．計測は3回繰り返している．また，護岸前面(L1)での水位が0.01mを超えた時刻を0sとして時刻のゼロ点補正を行っている．</p>
+    <p>　本課題では，<a href="#table1">表-1</a>に示す実験ケースのうち，Model 3，<i>D</i>=1mおよび2m，<i>H</i><sub>w</sub>=0.02m，<i>&Delta;h</i>=0.15mのケースを対象とする．</p>
+    </center>
+    <h1>比較方法</h1>
+    <p>　事前準備用の実験データとして，一部の実験ケースのデータが<a href="http://tsunami-portal.bosai.go.jp" target="_blank">津波防災研究ポータルサイト</a>のベンチマーク問題として<a href="http://tsunami-portal.bosai.go.jp/benchmarkProblem3#1_1" target="_blank">公開されており</a>，計算モデルの精度を確認することができる．公開されている実験ケースは，構造物形状：Model 1およびModel 3の2種類，護岸からの距離：1.0mおよび2.0mの2種類，防潮壁高さ：0.00m，貯水位：0.15mである．</p>
+    <p>　ハッカソンでは，<a href="#table1">表-1</a>のうち，Model 3，<i>D</i>=1mおよび2m，<i>H</i><sub>w</sub>=0.02m，<i>&Delta;h</i>=0.15mのケースを対象とし，構造物前面の水位および圧力（底面からの高さ0.01m~0.07mの範囲を0.02m間隔）の時系列を比較する．</p>
+</p>
+    <h1>参考文献</h1>
+    <p>有光剛，大江一也，川崎浩司，構造物前面の浸水深と流速を用いた津波波圧の評価手法に関する水理実験，土木学会論文集B2(海岸工学)，Vol.68，No.2，pp.I_776-I_780，2012．【<a href="https://www.jstage.jst.go.jp/article/kaigan/68/2/68_I_776/_article/-char/ja/" target="_blank">Link</a>】</p>
+    <h1>お問い合わせ</h1>
+    <p>tsnm-wg3[at]cm.kansai-u.ac.jp</p>
+    <p>※送信する際は[at]を@に変更してください．</p>
+    <h1>図表</h1>
+    <center>
+      <br>
+      <a href="img/no4-1.png" target="_blank"><img src="img/no4-1.png" width="500"></a>
+      <p>図-1　実験装置の概要</p>
+      <br>
+      <a id="fig2"></a>
+      <a href="img/no4-2.png" target="_blank"><img src="img/no4-2.png" width="500"></a>
+      <p>図-2　構造物模型の概要</p>
+      <br>
+      <a id="fig3"></a>
+      <a href="img/no4-3.png" target="_blank"><img src="img/no4-3.png" width="500"></a>
+      <p>図-3　水位の計測位置</p>
+      <br>
+      <a id="table1"></a>
+      <p>表-1　実験ケース</p>
+      <table class="explanation">
+        <tr>
+          <td>構造物形状
+          <td>護岸からの距離<br><i>D</i>(m)
+          <td>防潮壁高さ<br><i>H<sub>w</sub></i>(m)
+          <td>貯水位<br><i>&Delta;h</i>(m)
+        <tr>
+          <td rowspan="6">Model 1<br>Model 2<br>Model 3<br>Model 4
+          <td rowspan="3">1.0
+          <td>0.00
+          <td>0.09, 0.15, 0.21
+        <tr>
+          <td>0.02
+          <td>0.09, 0.15
+        <tr>
+          <td>0.05
+          <td>0.15
+        <tr>
+          <td rowspan="3">2.0
+          <td>0.00
+          <td>0.09, 0.15, 0.21
+        <tr>
+          <td>0.02
+          <td>0.09, 0.15
+        <tr>
+          <td>0.05
+          <td>0.15
+      </table>
+  </section>
+</article>
+<footer>
+  <small>&copy; 2019 津波作用に関する研究レビューおよび活用研究小委員会</small>
+</footer>
+</body>
+</html>

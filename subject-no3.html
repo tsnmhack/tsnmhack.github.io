@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150372745-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150372745-1');
+</script>
+<meta charset="UTF-8">
+<title>津波解析ハッカソン in 小豆島</title>
+<link rel="stylesheet" href="css/ress.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>津波解析ハッカソン in 小豆島</h1>
+  <h2>2020年9月1日〜3日</h2>
+</header>
+<nav>
+  <ul>
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="info.html">開催案内</a></li>
+    <li class="current"><a href="subject.html">課　題</a></li>
+    <li><a href="join.html">参加方法</a></li>
+    <li><a href="comp.html">計算環境</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+  </ul>
+</nav>
+<article>
+  <section>
+    <h2>課題３　防潮壁に作用する孤立波の波圧</h2>
+    <h1>概要</h1>
+    <p>　有川(2015)による防潮壁に作用する孤立波の波圧を対象とした水理模型実験の再現計算を行い，孤立波の浅水変形，砕波，最大重複波圧，衝撃段波波圧の再現性を検証する．</p>
+    <h1>内容</h1>
+    <p>　巨大津波に対する防護の一つとして，直立型の海岸堤防がある．このような直立堤に対する津波の波力は，古くから検討されており，近年では大規模な試験も行われている．しかし，その波力特性については，いまだ不明瞭な点が多い．特に，孤立波のような周期の短いものに対しては，系統立てた実験がない．そこで有川(2015)は，孤立波に対する波力試験を行い，その特性について検討を行った．本課題ではこの水理模型実験の再現計算を行う．</p>
+    <p>　実験方法および実験条件を以下に示す．水槽は，港湾空港技術研究所の所有する105m造波水路（長さ105m，幅2.5m，深さ2.0m）を用いて行った．水路幅は途中で二つに区切られており，斜面を設置した水路幅は0.78mとなる．地形は，海域では一様斜面勾配を，陸域では水平床とし，一様斜面勾配は，1/40，1/20，1/10，0の4種類とした．地形断面図と波高計，流速計および構造物の設置位置を<a href="#fig1">図-1</a>に示す．</p>
+    <p>　壁体模型は，高さ1.0m，幅0.26mの直立壁の模型を陸域に並べて設置した．それぞれの正面の中央部に，10cm刻みで波圧計を設置した．その場所を<a href="#fig2">図-2</a>に示す．</p>
+    <p>　孤立波は，波高3ケース（沖側（Wg1の位置）の波高約0.20m，0.15m，0.075m），水深2ケース（陸地高さをゼロとして0.0m，-0.05m）とした．直立壁の位置は，海岸線から0.0m，1.25m，2.5mの3ケースとした．ばらつきを考えて各ケース15回行った．</p>
+    <p>　実験データのサンプリング周波数は2000Hzである．</p>
+    <h1>比較方法</h1>
+    <p>　事前準備用の実験データとして，一部の実験ケースのデータが<a href="http://tsunami-portal.bosai.go.jp" target="_blank">津波防災研究ポータルサイト</a>のベンチマーク問題として<a href="http://tsunami-portal.bosai.go.jp/benchmarkProblem3#1_3" target="_blank">公開されており</a>，計算モデルの精度を確認することができる．公開されている実験ケースは，海底地形：斜面勾配0，直立壁の位置：0.0m，1.25m，1.5mの3種類，水深：0.0m，孤立波の波高：0.2mである．</p>
+    <p>　ハッカソンでは<a href="#table1">表-1</a>に示すように，海底地形：斜面勾配1/10，直立壁の位置：0.0m，水深：-0.025m（論文中には記載していない条件），孤立波の波高：0.2mの実験ケースを対象とし，水位および直立壁前面の波圧の時系列を比較する<strong>（比較する計測箇所は決まり次第お知らせします）</strong>．</p>
+    <h1>事前公開データ（公開時期は決まり次第お知らせします）</h1>
+    <p>沖側(Wg1)の水位時系列データを事前に公開する．</p>
+    <h1>参考文献</h1>
+    <p>有川太郎，水理模型実験による防潮壁に作用する孤立波の波圧特性に関する検討，土木学会論文集B2（海岸工学），Vol. 71，No. 2，I_889-I_894，2015．【<a href="https://www.jstage.jst.go.jp/article/kaigan/71/2/71_I_889/_article/-char/ja/" target="_blank">Link</a>】</p>
+    <h1>お問い合わせ</h1>
+    <p>tsnm-wg3[at]cm.kansai-u.ac.jp</p>
+    <p>※送信する際は[at]を@に変更してください．</p>
+    <h1>図表</h1>
+    <center>
+      <a id="fig1"></a>
+      <a href="img/no3-1.png" target="_blank"><img src="img/no3-1.png" width="500"></a>
+      <p>図-1　地形断面図と波高計(Wg)，流速計(V)および構造物の設置位置<br>上から斜面勾配1/40，1/20，1/10，0）</p>
+      <br>
+      <a id="fig2"></a>
+      <a href="img/no3-2.png" target="_blank"><img src="img/no3-2.png" width="400"></a>
+      <p>図-2　壁体模型と波圧計設置位置</p>
+      <br>
+      <a id="table1"></a>
+      <p>表-1　実験ケース</p>
+      <table class="explanation">
+        <tr>
+          <td>海底地形
+          <td>斜面勾配1/10
+        <tr>
+          <td>直立壁の位置
+          <td>海岸線から0.0m
+        <tr>
+          <td>水深
+          <td>陸地高さに対して-0.025m
+        <tr>
+          <td>孤立波の波高
+          <td>沖側(Wg1)で0.2m
+      </table>
+    </center>
+  </section>
+</article>
+<footer>
+  <small>&copy; 2019 津波作用に関する研究レビューおよび活用研究小委員会</small>
+</footer>
+</body>
+</html>

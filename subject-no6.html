@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150372745-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150372745-1');
+</script>
+<meta charset="UTF-8">
+<title>津波解析ハッカソン in 小豆島</title>
+<link rel="stylesheet" href="css/ress.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>津波解析ハッカソン in 小豆島</h1>
+  <h2>2020年9月1日〜3日</h2>
+</header>
+<nav>
+  <ul>
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="info.html">開催案内</a></li>
+    <li class="current"><a href="subject.html">課　題</a></li>
+    <li><a href="join.html">参加方法</a></li>
+    <li><a href="comp.html">計算環境</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+  </ul>
+</nav>
+<article>
+  <section>
+    <h2>課題６　津波による港湾内の地形・浮遊砂濃度変化</h2>
+    <h1>概要</h1>
+    <p>　津波による港湾内の流況・地形変化に関する水理実験の再現計算を実施し，浮遊砂濃度の時系列の再現性を検証する．</p>
+    <h1>内容</h1>
+    <p><strong>課題の背景と目的</strong></p>
+    <p>　津波による土砂移動・地形変化を定量的に把握・予測することは，港湾施設の安全性や対策を検討する際に必須である．さらに，港湾内における海底地形変化の予測モデルを構築する上でも重要である．</p>
+    <p>　本課題では，大型平面水槽を用いた港湾内の津波による流況と地形変化に関する水理実験を対象に，使用する解析モデルの再現性を検証するとともに，港湾における流況・地形変化・浮遊砂濃度特性について議論する．</p>
+    <br>
+    <p><strong>実験条件</strong>（<a href="#fig1">図-1</a>を参照）</p>
+    <ul>
+      <li>縮尺1/100の港湾模型を平面水槽内に設置し，沖から港湾に向かって造波した．</li>
+      <li>港湾付近（<a href="#fig2">図-2</a>の右側の四角領域に砂（中央粒径0.08mm）を敷き詰めた条件（以下，移動床実験）と砂を敷き詰めていない条件（以下，固定床実験）の2種類を設定した．
+      <li>沖合（<a href="#fig2">図-2</a>の水位・流速計測位置）で水位・流速の時系列を計測した．固定床実験での計測データを<a href="#fig3">図-3</a>，移動床実験での計測データを<a href="#fig4">図-4</a>に示す．</li>
+        <li>固定床実験では，港湾内で水位と流速を計測した．計測位置を<a href="#fig5">図-5</a>，計測データを<a href="#fig6">図-6</a>に示す．</li>
+        <li>移動床実験では，レーザー変位計を用いて，港湾付近の地形変化を計測した（港口部付近は0.05m間隔，それ以外は0.1m間隔）．計測データを<a href="#fig7">図-7</a>に示す．</li>
+      <li>移動床実験では，濁度計を用いて，港湾内の浮遊砂濃度の計測した（計測位置は<a href="#fig8">図-8</a>の赤丸）．<strong>※ハッカソンまでは非公開</strong></li>
+    </ul>
+    <h1>比較方法</h1>
+    <ul>
+      <li>固定床実験で計測された水位・流速の時系列データ（<a href="#fig6">図-6</a>）と計算結果を事前に比較し，流況の再現性を確認する．</li>
+      <li>移動床実験で計測された地形変化データ（<a href="#fig7">図-8</a>の白丸，0.5m×0.5m間隔の15地点×15地点）と計算結果を事前に比較し，津波による砂移動の再現性を確認する．地形変化はハッカソンにおいても比較するため，計算結果を提出する．</li>
+      <li><a href="#fig8">図-8</a>の赤丸の位置（C2，C5）での浮遊砂濃度の時系列をハッカソンにおいて比較するため，計算結果（３次元計算の場合は，鉛直分布も含める）を提出する．</li>
+    </ul>
+    <h1>事前公開データ（公開時期は決まり次第お知らせします）</h1>
+    <ul>
+      <li>固定床実験で計測された沖合の水位・流速の時系列データ（<a href="#fig3">図-3</a>）</li>
+      <li>移動床実験で計測された沖合の水位の時系列データ（<a href="#fig4">図-4</a>）</li>
+      <li>固定床実験で計測された港湾内の水位・流速の時系列データ（<a href="#fig6">図-6</a>）</li>
+      <li>移動床実験で計測された港湾付近の地形変化データ（<a href="#fig7">図-7</a>）</li>
+    </ul>
+    <h1>お問い合わせ</h1>
+    <p>tsnm-wg4[at]cm.kansai-u.ac.jp</p>
+    <p>※送信する際は[at]を@に変更してください．</p>
+    <h1>図面</h1>
+    <center>
+      <a id="fig1"></a>
+      <a href="img/no6-1.png" target="_blank"><img src="img/no6-1.png" width="500"></a>
+      <p>図-1　実験条件</p>
+      <br>
+      <a id="fig2"></a>
+      <a href="img/no6-2.png" target="_blank"><img src="img/no6-2.png" width="500"></a>
+      <p>図-2　沖合計測位置および港湾周辺</p>
+      <br>
+      <a id="fig3"></a>
+      <a href="img/no6-3.png" target="_blank"><img src="img/no6-3.png" width="500"></a>
+      <p>図-3　沖合の水位・流速の時系列データ（固定床実験）</p>
+      <br>
+      <a id="fig4"></a>
+      <a href="img/no6-4.png" target="_blank"><img src="img/no6-4.png" width="500"></a>
+      <p>図-4　沖合の水位の時系列データ（移動床実験）</p>
+      <br>
+      <a id="fig5"></a>
+      <a href="img/no6-5.png" target="_blank"><img src="img/no6-5.png" width="400"></a>
+      <p>図-5　水位・流速の計測位置（固定床実験）</p>
+      <br>
+      <a id="fig6"></a>
+      <a href="img/no6-6a.png" target="_blank"><img src="img/no6-6a.png" width="600"></a>
+      <a href="img/no6-6b.png" target="_blank"><img src="img/no6-6b.png" width="600"></a>
+      <a href="img/no6-6c.png" target="_blank"><img src="img/no6-6c.png" width="600"></a>
+      <p>図-6　港湾内の水位・流速の時系列データ（固定床実験）</p>
+      <br>
+      <a id="fig7"></a>
+      <a href="img/no6-7a.png" target="_blank"><img src="img/no6-7a.png" width="400"></a>
+      <a href="img/no6-7b.png" target="_blank"><img src="img/no6-7b.png" width="400"></a>
+      <p>図-7　港湾付近の地形変化データ（移動床実験）</p>
+      <br>
+      <a id="fig8"></a>
+      <a href="img/no6-8.png" target="_blank"><img src="img/no6-8.png" width="400"></a>
+      <p>図-8　地形変化および浮遊砂濃度の比較位置（移動床実験）</p>
+    </center>
+  </section>
+</article>
+<footer>
+  <small>&copy; 2019 津波作用に関する研究レビューおよび活用研究小委員会</small>
+</footer>
+</body>
+</html>

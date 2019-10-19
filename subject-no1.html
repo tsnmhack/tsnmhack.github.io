@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150372745-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150372745-1');
+</script>
+<meta charset="UTF-8">
+<title>津波解析ハッカソン in 小豆島</title>
+<link rel="stylesheet" href="css/ress.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>津波解析ハッカソン in 小豆島</h1>
+  <h2>2020年9月1日〜3日</h2>
+</header>
+<nav>
+  <ul>
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="info.html">開催案内</a></li>
+    <li class="current"><a href="subject.html">課　題</a></li>
+    <li><a href="join.html">参加方法</a></li>
+    <li><a href="comp.html">計算環境</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+  </ul>
+</nav>
+<article>
+  <section>
+    <h2>課題１　模型実験による詳細な市街地氾濫過程とその水理諸量</h2>
+    <h1>概要</h1>
+    <p>　詳細な市街地模型を対象とした氾濫実験の水理諸量と数値モデルとの比較を行い，再現性や実用性を踏まえた最適な解析モデルの検討を行う．</p>
+    <h1>内容</h1>
+    <p>
+    　数値シミュレーションにより津波のハザード・リスク評価を詳細に検討するためには，津波の陸上氾濫現象をより精度良く予測できる数値モデルが必須である．本課題では，Prasetyo et al.（2019）による論文の水理実験を対象として，詳細な市街地模型を対象とした氾濫実験の水理諸量と数値モデルとの比較を行い，再現性や実用性を踏まえた最適な数値モデルの検討を行う．<br>
+    　同論文は，詳細かつ複雑な市街地模型を氾濫する津波の物理プロセスを明らかにする目的で実施しており，さらに実験結果を用いて，数値モデル（2次元平面，準3次元）の妥当性の検証を試みている．本ハッカソンでは，同実験の未公開のケースを課題として提供する．<br>
+　実験の詳細については以下のとおり．
+    </p>
+    <ul>
+      <li>宮城県女川市中心市街地を模擬した津波遡上実験（<a href="#fig1">図-1AおよびC</a>を参照）．模型縮尺は1/250．</li>
+      <li>長さ10m，幅4mの実験水槽において，沖合（1/10勾配）から砕波段波型もしくは孤立波型の水位波形を入射波として造波．（ハッカソンでは，論文未公開の入力波を提供）</li>
+      <li>計測項目として，水位時系列（海域2点，陸域10点），流速時系列（海域2点，陸域3点），圧力時系列（陸上構造物18点），浸水域（画像解析により取得）を計測．</li>
+    </ul>
+    <h1>事前公開データ（公開時期は決まり次第お知らせします）</h1>
+    <ul>
+      <li>入力波形（テキストファイルによるデジタルデータ）</li>
+      <li>レーザースキャンによる地形データ（<a href="#fig1">図-1B</a>を参照）．空間解像度1cm，格子数451451点．</li>
+      <li>水位・流速・圧力（出力地点位置は浸水域の沿岸近く、中心部、遡上境界近く）</li>
+      <li>浸水範囲（浸水限界のラインデータ，特定の時刻のスナップショット）</li>
+    </ul>
+    <h1>比較方法</h1>
+    <ul>
+      <li>指定した位置での時系列（水位，流速，圧力）を実験値と重ね合わせて比較する<strong>（比較する計測箇所は決まり次第お知らせします）</strong>．</p>
+      <li>浸水範囲について，実験で取得した画像（スナップショット）と比較する．
+      <li>空間解像度を変更する，構造物グリッドを粗度モデルとして置き換える，などの数値計算における各種設定も自由とする．</li>
+    </ul>
+    <h1>参考文献</h1>
+    <p>Adi Prasetyo, Tomohiro Yasuda, Takuya Miyashita and Nobuhito Mori, Physical Modeling and Numerical Analysis of Tsunami Inundation in a Coastal City, Frontiers in Built Environment, Vol.5, Article 46, pp.1-19, 2019, doi:10.3389/fbuil.2019.00046. 【<a href="https://www.frontiersin.org/articles/10.3389/fbuil.2019.00046/full" target="_blank">Link</a>】</p>
+    <h1>お問い合わせ</h1>
+    <p>tsnm-wg2[at]cm.kansai-u.ac.jp</p>
+    <p>※送信する際は[at]を@に変更してください．</p>
+    <h1>図面</h1>
+    <center>
+      <a id="fig1"></a>
+      <a href="img/no1.jpg" target="_blank"><img src="img/no1.jpg" width="500"></a>
+      <p>図-1　A: 女川の航空写真，B: レーザースキャンデータ，C: 実験条件（地形条件）の概要<br>（<a href="https://www.frontiersin.org/articles/10.3389/fbuil.2019.00046/full" target="_blank">Prasetyo et al. (2019)</a>のFigure 2を借用させていただきました．）</font></p>
+    </center>
+  <section>
+</article>
+<footer>
+  <small>&copy; 2019 津波作用に関する研究レビューおよび活用研究小委員会</small>
+</footer>
+</body>
+</html>

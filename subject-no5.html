@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150372745-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150372745-1');
+</script>
+<meta charset="UTF-8">
+<title>津波解析ハッカソン in 小豆島</title>
+<link rel="stylesheet" href="css/ress.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>津波解析ハッカソン in 小豆島</h1>
+  <h2>2020年9月1日〜3日</h2>
+</header>
+<nav>
+  <ul>
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="info.html">開催案内</a></li>
+    <li class="current"><a href="subject.html">課　題</a></li>
+    <li><a href="join.html">参加方法</a></li>
+    <li><a href="comp.html">計算環境</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+  </ul>
+</nav>
+<article>
+  <section>
+    <h2>課題５　鉛直壁に作用するダムブレイク流れの衝突波圧</h2>
+    <h1>概要</h1>
+    <p>　水谷ら(2017)による陸上構造物へ作用する津波波圧を対象とした水理模型実験の再現計算を行う．本課題では，ゲート急開により発生させた段波津波が斜面を遡上し，鉛直二次元壁に衝突する現象を取り扱い，壁面衝突後に打ち上がった水塊が落下着水する際の波圧特性に着目し，その再現性を検証する．</p>
+    <h1>内容</h1>
+    <p>　陸上を遡上する津波が構造物に衝突する場合，最初に津波の先端が構造物に衝突し，構造物の基底部に衝撃波圧を発生させる．また，構造物に衝突した津波先端部は，その後構造物に沿って打ち上がり，後続する流れの上に落水を繰り返して準定常状態へと移行する．この準定常状態における圧力分布は持続波圧と呼ばれる．津波波力の最大値はこうした衝撃波圧や持続波圧発生時ではなく，その遷移過程で生じる場合がある．そこで水谷ら(2017)は，壁面衝突後に打ち上がった水塊が落下着水する際の波圧特性に着目した水理模型実験を行っており，本課題ではこの水理模型実験の再現計算を行う．</p>
+    <p>　実験方法および実験条件を以下に示す．鉛直壁に作用するダムブレイク流れの衝突波圧を計測した．実験装置を<a href="#fig1">図-1</a>に示す．水路は長さ3.3m×幅0.39mであり，水路内には1/40勾配のアクリル斜面（長さ2.0m×高さ0.05m）が設置され，斜面後端に水平床が接続されている．波圧は水平床上に設置された鉛直壁中央での波圧である．波圧計の設置位置を<a href="#fig2">図-2</a>に示す．</p>
+    <p>　<a href="#table1">表-1</a>に示すように，貯水位<i>H</i>を6.0cmから11.0cmに変化させて実験を行った．表には鉛直壁を設置しない状態で計測した，進行波の最大水位<i>h<sub>max</sub></i>を併せて記載している．波圧データのサンプリング周波数は10kHzであり，同じ条件で10回以上行ったそれぞれの波圧の時系列データをアンサンブル平均した．その際，波圧の立ち上がり時刻をゼロとして時間調整を行っている．</p>
+    <p>　本課題では<a href="#table1">表-1</a>に示す実験ケースの内，貯水位<i>H</i>=9.0cmのケースを対象とする．</p>
+    <h1>比較方法</h1>
+    <p>　事前準備用の実験データとして，貯水位H=8.0cmのケースのデータが<a href="http://tsunami-portal.bosai.go.jp" target="_blank">津波防災研究ポータルサイト</a>のベンチマーク問題として公開予定<strong>（公開時期は決まり次第お知らせします）</strong>であり，計算モデルの精度を確認することができる．</p>
+    <p>　本ハッカソンでは，貯水位H=9.0cmのケースを対象とし，直立壁前面の波圧の時系列を比較する<strong>（比較する計測箇所は決まり次第お知らせします）</strong>．</p>
+    <h1>参考文献</h1>
+    <p>水谷夏樹，梅田尋慈，池本将大，構造物に衝突し打ち上がった水塊の落水によって生じる波力特性について，土木学会論文集B2(海岸工学)，Vol.73，No.2，pp. I_919-I_924，2017．【<a href="https://www.jstage.jst.go.jp/article/kaigan/73/2/73_I_919/_article/-char/ja/" target="_blank">Link</a>】</p>
+    <h1>お問い合わせ</h1>
+    <p>tsnm-wg3[at]cm.kansai-u.ac.jp</p>
+    <p>※送信する際は[at]を@に変更してください．</p>
+    <h1>図表</h1>
+    <center>
+      <a id="fig1"></a>
+      <a href="img/no5-1.png" target="_blank"><img src="img/no5-1.png" width="500"></a>
+      <p>図-1　実験装置の概要</p>
+      <br>
+      <a id="fig2"></a>
+      <a href="img/no5-2.png" target="_blank"><img src="img/no5-2.png" width="300"></a>
+      <p>図-2　波圧計設置位置<p>
+      <a id="table1"></a>
+      <p>表-1　実験ケース</p>
+      <table class="explanation">
+        <tr>
+          <td>貯水位<br><i>H</i>(cm)
+          <td>進行波の最大水位<br><i>h<sub>max</sub></i>(mm)
+        <tr>
+          <td>6.0
+          <td>5.49
+        <tr>
+          <td>7.0
+          <td>7.93
+        <tr>
+          <td>8.0
+          <td>9.84
+        <tr>
+          <td>9.0
+          <td>11.78
+        <tr>
+          <td>10.0
+          <td>14.56
+        <tr>
+          <td>11.0
+          <td>17.23
+      </table>
+    </center>
+  </section>
+</article>
+<footer>
+  <small>&copy; 2019 津波作用に関する研究レビューおよび活用研究小委員会</small>
+</footer>
+</body>
+</html>

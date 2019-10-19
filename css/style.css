@@ -1,0 +1,104 @@
+body {
+  font-family: "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
+  width: 978px;
+  font-size: 110%;
+  color: black;
+  margin: 0 auto;
+}
+a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:visited { color: blue; }
+a:hover {
+  color: #3d92d8;
+}
+.explanation {
+  border-collapse: collapse;
+}
+.explanation td {
+  border: solid thin; 
+  text-align: center;
+  padding: 10px;
+}
+header {
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: #000080;
+  text-align: center;
+  color: white;
+}
+nav {
+  margin: 10px auto;
+  overflow: hidden;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  width: 162px;
+  float: left;
+  margin-right: 1px;
+  text-align: center;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
+  background-color: #666666;
+  color: white;
+  text-decoration: none;
+}
+nav ul li.current a {
+  background-color: #778899;
+}
+nav ul li a:hover {
+  background-color: #778899;
+  color: white;
+}
+nav ul li a:visited {
+  color: white;
+}
+article p {
+  padding-top: 5px;
+  padding-left: 20px;
+}
+article h1 {
+  border-left: solid 5px red;
+  padding: 4px 9px 4px 14px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+article h2 {
+  text-align: center;
+  border: solid 5px green;
+  border-radius: 5px;
+  padding: 4px 9px 4px 14px;
+  margin-top: 40px;
+}
+article h3 {
+  padding: 10px;
+  margin: 30px 80px;
+  background-color: red;
+  text-align: center;
+  color: white;
+}
+article ul {
+  padding-left: 45px;
+}
+article table {
+  padding-top: 15px;
+  padding-left: 40px;
+}
+article table td {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+footer {
+  background-color: #c0c0c0;
+  text-align: right;
+  color: black;
+  padding: 5px;
+  margin-top: 20px;
+}
