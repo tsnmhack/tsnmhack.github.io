@@ -102,3 +102,30 @@ footer {
   padding: 5px;
   margin-top: 20px;
 }
+.contact input, textarea {
+  margin: 0 10px;
+  padding: 5px;
+  border: 1px solid;
+}
+.contact button {
+  margin-left: 10px;
+  padding: 10px 30px;
+  font-weight: bold;
+  color: white;
+  background-color: #000080;
+  border-style: none;
+  border-radius: 5px;
+}
+.text-invalid {
+  margin-left: 15px;
+  font-weight: bold;
+  color:red;
+}
+.contact h3 {
+  margin: 30px 700px 30px 30px;
+  padding: 10px;
+  color: white;
+  background-color: #000080;
+  text-align: center;
+  border-radius: 5px;
+}
