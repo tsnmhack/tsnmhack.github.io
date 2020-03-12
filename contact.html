@@ -39,28 +39,27 @@
         <tr>
           <td>氏　名</td>
           <td>
-            <input name="氏名" type="text" data-formrun-required size="20">
+            <input name="氏名" type="text" placeholder="[必須]" data-formrun-required size="20">
             <div class="text-invalid" data-formrun-show-if-error="氏名">氏名を入力してください</div>
           </td>
         </tr>
         <tr>
           <td>メールアドレス</td>
           <td>
-            <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required size="40">
+            <input name="メールアドレス" type="text" placeholder="[必須]" data-formrun-type="email" data-formrun-required size="40">
             <div class="text-invalid" data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
           </td>
         </tr>
         <tr>
           <td>メールアドレス<br>（確認）</td>
           <td>
-            <input name="メールアドレス_confirm" data-formrun-type="email_confirmation" data-formrun-confirmed-name="メールアドレス" size="40">
+            <input name="メールアドレス_confirm" data-formrun-type="email_confirmation" placeholder="[必須]" data-formrun-confirmed-name="メールアドレス" size="40">
             <div class="text-invalid" data-formrun-show-if-error="メールアドレス_confirm">メールアドレスが一致しません</div>
           </td>
         </tr>
         <tr>
-          <td>お問い合わせ項目<br>（複数可）</td>
+          <td>お問い合わせ項目<br>　[必須]<br>（複数可）</td>
           <td>
-            <label><input type="checkbox" name="問合せ項目[]" value="ハッカソン全般" data-formrun-required>ハッカソン全般</label><br>
             <label><input type="checkbox" name="問合せ項目[]" value="課題1" data-formrun-required>課題1</label>
             <label><input type="checkbox" name="問合せ項目[]" value="課題2" data-formrun-required>課題2</label>
             <label><input type="checkbox" name="問合せ項目[]" value="課題3" data-formrun-required>課題3</label>
@@ -70,6 +69,9 @@
             <label><input type="checkbox" name="問合せ項目[]" value="課題7" data-formrun-required>課題7</label>
             <label><input type="checkbox" name="問合せ項目[]" value="課題8" data-formrun-required>課題8</label>
             <label><input type="checkbox" name="問合せ項目[]" value="課題9" data-formrun-required>課題9</label><br>
+            <label><input type="checkbox" name="問合せ項目[]" value="登録情報の変更" data-formrun-required>登録情報の変更</label>
+            <label><input type="checkbox" name="問合せ項目[]" value="参加課題の変更" data-formrun-required>参加課題の変更</label>
+            <label><input type="checkbox" name="問合せ項目[]" value="参加辞退" data-formrun-required>参加辞退</label><br>
             <label><input type="checkbox" name="問合せ項目[]" value="その他" data-formrun-required>その他</label>
             <div class="text-invalid" data-formrun-show-if-error="問合せ項目[]">項目を１つ以上選択してください</div>
           </td>
@@ -77,7 +79,7 @@
         <tr>
           <td>お問い合わせ内容</td>
           <td>
-            <textarea name="お問い合わせ内容" data-formrun-required cols="60" rows="4"></textarea>
+            <textarea name="お問い合わせ内容" placeholder="[必須]" data-formrun-required cols="60" rows="4"></textarea>
             <div class="text-invalid" data-formrun-show-if-error="お問い合わせ内容">お問い合わせの内容を入力してください</div>
           </td>
         </tr>

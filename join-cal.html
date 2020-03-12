@@ -10,6 +10,7 @@
 
   gtag('config', 'UA-150372745-1');
 </script>
+<script src="https://sdk.form.run/js/v2/formrun.js"></script>
 <meta charset="UTF-8">
 <title>津波解析ハッカソン in 小豆島</title>
 <link rel="stylesheet" href="css/ress.css">
@@ -22,18 +23,89 @@
 </header>
 <nav>
   <ul>
-    <li class="current"><a href="index.html">ホーム</a></li>
+    <li><a href="index.html">ホーム</a></li>
     <li><a href="info.html">開催案内</a></li>
     <li><a href="subject.html">課　題</a></li>
-    <li><a href="join.html">参加方法</a></li>
+    <li class="current"><a href="join.html">参加方法</a></li>
     <li><a href="comp.html">計算環境</a></li>
     <li><a href="contact.html">お問い合わせ</a></li>
   </ul>
 </nav>
 <article>
-  <section>
+  <section class="contact">
     <h1>計算チームの参加申込</h1>
-    <h3>現在，準備中です．しばらくお待ちください．</h3>
+    <form class="formrun" action="https://form.run/api/v1/r/6r1zhv0u5ixbungyfr1ky9sm" method="post">
+
+
+      <table>
+        <tr>
+          <td>チーム名</td>
+          <td>
+            <input name="チーム名" type="text" placeholder="[必須]" data-formrun-required size="30">
+            <div class="text-invalid" data-formrun-show-if-error="チーム名">チームの名称を入力してください</div>
+          </td>
+        </tr>
+        <tr>
+          <td>代表者名</td>
+          <td>
+            <input name="代表者名" type="text" placeholder="[必須]" data-formrun-required size="20">
+            <div class="text-invalid" data-formrun-show-if-error="代表者名">代表者の氏名を入力してください</div>
+          </td>
+        </tr>
+        <tr>
+          <td>メールアドレス</td>
+          <td>
+            <input name="メールアドレス" type="text" placeholder="[必須]" data-formrun-type="email" data-formrun-required size="40">
+            <div class="text-invalid" data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+          </td>
+        </tr>
+        <tr>
+          <td>メールアドレス<br>（確認）</td>
+          <td>
+            <input name="メールアドレス_confirm" placeholder="[必須]" data-formrun-type="email_confirmation" data-formrun-confirmed-name="メールアドレス" size="40">
+            <div class="text-invalid" data-formrun-show-if-error="メールアドレス_confirm">メールアドレスが一致しません</div>
+          </td>
+        </tr>
+        <tr>
+          <td>電話番号</td>
+          <td>
+            <input name="電話番号" type="text" placeholder="[必須]" data-formrun-type="tel" data-formrun-required size="40">
+            <div class="text-invalid" data-formrun-show-if-error="電話番号">電話番号を正しく入力してください</div>
+          </td>
+        </tr>
+        <tr>
+          <td>参加する課題<br>　[必須]<br>（複数可）</td>
+          <td>
+            <label><input type="checkbox" name="参加課題[]" value="課題1" data-formrun-required>課題1</label>
+            <label><input type="checkbox" name="参加課題[]" value="課題2" data-formrun-required>課題2</label>
+            <label><input type="checkbox" name="参加課題[]" value="課題3" data-formrun-required>課題3</label>
+            <label><input type="checkbox" name="参加課題[]" value="課題4" data-formrun-required>課題4</label>
+            <label><input type="checkbox" name="参加課題[]" value="課題5" data-formrun-required>課題5</label><br>
+            <label><input type="checkbox" name="参加課題[]" value="課題6" data-formrun-required>課題6</label>
+            <label><input type="checkbox" name="参加課題[]" value="課題7" data-formrun-required>課題7</label>
+            <label><input type="checkbox" name="参加課題[]" value="課題8" data-formrun-required>課題8</label>
+            <label><input type="checkbox" name="参加課題[]" value="課題9" data-formrun-required>課題9</label>
+            <div class="text-invalid" data-formrun-show-if-error="参加課題[]">課題を１つ以上選択してください</div>
+          </td>
+        </tr>
+        <tr>
+          <td>連絡事項</td>
+          <td>
+            <textarea name="連絡事項" cols="60" rows="4"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button type="submit" data-formrun-error-text="入力内容を確認して下さい" data-formrun-submitting-text="送信中...">送　信</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </section>
+  <section>
+    <h1>申込内容の変更</h1>
+    <p>登録情報の変更，参加課題の変更，参加辞退などは<a href="contact.html">お問い合わせ</a>からご連絡ください．
   </section>
 </article>
 <footer>
