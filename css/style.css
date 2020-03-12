@@ -1,6 +1,6 @@
 body {
   font-family: "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
-  width: 978px;
+  width: 987px;
   font-size: 110%;
   color: black;
   margin: 0 auto;
@@ -38,7 +38,7 @@ nav ul {
   list-style: none;
 }
 nav ul li {
-  width: 162px;
+  width: 140px;
   float: left;
   margin-right: 1px;
   text-align: center;
