@@ -14,13 +14,8 @@ a:visited { color: blue; }
 a:hover {
   color: #3d92d8;
 }
-.explanation {
-  border-collapse: collapse;
-}
 .explanation td {
-  border: solid thin; 
   text-align: center;
-  padding: 10px;
 }
 header {
   padding: 10px;
@@ -88,12 +83,14 @@ article ul {
   padding-left: 45px;
 }
 article table {
+  border: solid thin; 
+  border-collapse: collapse;
   padding-top: 15px;
   padding-left: 40px;
 }
 article table td {
-  padding-top: 15px;
-  padding-left: 10px;
+  border: solid thin; 
+  padding: 10px;
 }
 footer {
   background-color: #c0c0c0;
