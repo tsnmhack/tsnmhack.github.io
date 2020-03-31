@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150372745-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150372745-1');
+</script>
+<script src="https://sdk.form.run/js/v2/formrun.js"></script>
+<meta charset="UTF-8">
+<title>津波解析ハッカソン in 小豆島</title>
+<link rel="stylesheet" href="css/ress.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>津波解析ハッカソン in 小豆島</h1>
+  <h2>2020年9月1日〜3日</h2>
+</header>
+<nav>
+  <ul>
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="info.html">開催案内</a></li>
+    <li class="current"><a href="subject.html">課　題</a></li>
+    <li><a href="join.html">参加方法</a></li>
+    <li><a href="join-cal.html">参加申込</a></li>
+    <li><a href="comp.html">計算環境</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+  </ul>
+</nav>
+<article>
+  <section class="contact">
+    <h1>課題９の事前公開データの使用申込</h1>
+    <form class="formrun" action="https://form.run/api/v1/r/la9ij08r1rkp3ru4sv74r2r3" method="post">
+      <table>
+        <tr>
+        <tr>
+          <td>氏　名</td>
+          <td>
+            <input name="氏名" type="text" placeholder="[必須]" data-formrun-required size="15">
+            <div class="text-invalid" data-formrun-show-if-error="氏名">氏名を入力してください</div>
+          </td>
+        </tr>
+        <tr>
+          <td>所属または住所</td>
+          <td>
+            <input name="所属" type="text" placeholder="[必須]" data-formrun-required size="40">
+            <div class="text-invalid" data-formrun-show-if-error="所属">所属または住所を入力してください</div>
+          </td>
+        </tr>
+        <tr>
+          <td>メールアドレス</td>
+          <td>
+            <input name="メールアドレス" type="text" placeholder="[必須]" data-formrun-type="email" data-formrun-required size="30">
+            <div class="text-invalid" data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+          </td>
+        </tr>
+        <tr>
+          <td>メールアドレス<br>（確認）</td>
+          <td>
+            <input name="メールアドレス_confirm" placeholder="[必須]" data-formrun-type="email_confirmation" data-formrun-confirmed-name="メールアドレス" size="30">
+            <div class="text-invalid" data-formrun-show-if-error="メールアドレス_confirm">メールアドレスが一致しません</div>
+          </td>
+        </tr>
+        <tr>
+          <td>電話番号</td>
+          <td>
+            <input name="電話番号" type="text" placeholder="[必須]" data-formrun-type="tel" data-formrun-required size="20">
+            <div class="text-invalid" data-formrun-show-if-error="電話番号">電話番号を正しく入力してください</div>
+          </td>
+        </tr>
+        <tr>
+          <td>連絡事項</td>
+          <td>
+            <textarea name="連絡事項" cols="40" rows="4"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            使用制限<br>&nbsp; [必須]
+          </td>
+          <td>
+            <div>
+            </div>
+            <label>
+              <input type="checkbox" name="使用制限" data-formrun-required>入手したデータは津波解析ハッカソンにおいて発表する研究にのみ使用します．
+            </label>
+              <div class="text-invalid" data-formrun-show-if-error="使用制限">使用するためには同意が必要です</div>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button type="submit" data-formrun-error-text="入力内容を確認して下さい" data-formrun-submitting-text="送信中...">送　信</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </section>
+</article>
+<footer>
+  <small>&copy; 2019 津波作用に関する研究レビューおよび活用研究小委員会</small>
+</footer>
+</body>
+</html>
